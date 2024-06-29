@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args){
+ Scanner sc=new Scanner(System.in);
+ int start=sc.nextInt();
+ int end=sc.nextInt();
+ int sumodd=0;
+ int sumeven=0;
+ for (int i=start;i<=end;i++){
+   if(i%2==1){
+     sumodd=sumodd+i;
+     //System.out.print(i+" ");
+   }
+   if(i%2==0){
+     sumeven=sumeven+i;
+   }
+ }
+ int pl=sumodd-sumeven;
+ if (pl<0){
+   pl=~(pl-1);
+   System.out.println(pl);
+ }
+ else{
+  System.out.println(pl);
+ }
+ //System.out.println(sumeven);
+}
+
+}
+

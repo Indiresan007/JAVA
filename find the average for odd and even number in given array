@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args){
+ Scanner sc=new Scanner(System.in);
+ int sumodd=0;
+ int sumeven=0;
+ float c1=0.0f;
+ float c2=0.0f;
+ int size=sc.nextInt();
+ int arr[]=new int[size];
+ int i;
+ for (i=0;i<size;i++){
+   arr[i]=sc.nextInt();
+ }
+ for (i=0;i<size;i++){
+  if(arr[i]%2==0){
+    sumodd+=arr[i];
+    c1+=1;
+  }
+  if(arr[i]%2!=0){
+    sumeven+=arr[i];
+    c2+=1;
+  }
+ }
+// float t1=sumodd/c1;
+ //float t2=sumeven/c2;
+ System.out.println(sumodd/c1);
+ System.out.println(sumeven/c2);
+ }
+}

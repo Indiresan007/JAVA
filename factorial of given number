@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Calculattion {  
+public static void main(String[] args) {
+Scanner obj=new Scanner(System.in);
+int n = obj.nextInt();
+int fact = 1;
+int i=1;
+while(i<=n) {  
+fact = fact * i;
+i=i+1;
+}  
+System.out.println("factorial:" + fact);  
+}  
+}
