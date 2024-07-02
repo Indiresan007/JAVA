@@ -1,0 +1,13 @@
+import java.util.*;
+public class Number{
+  int a;int b;
+  public Number(){
+  a=90;
+  b=10;
+  }
+  public static void main (String[] args) {
+    Number n=new Number();
+    int c=n.a+n.b;
+    System.out.println(c);
+  }
+}
